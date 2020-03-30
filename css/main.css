@@ -1,0 +1,275 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+
+body {
+    font-family: Helvetica;
+}
+
+Figcaption,
+table,
+#section3 {
+    font-family: Quicksand;
+}
+
+#container {}
+
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/*------------------------------*/
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+header {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    margin-left: 30px;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100px;
+    margin-right: 50px;
+}
+
+nav .active {
+    color: #109eb5;
+}
+
+nav ul {
+    display: flex;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+nav ul li {
+    list-style: none;
+    margin-left: 25px;
+
+}
+
+nav ul li a {
+    color: darkgray;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+nav .active {
+    color: #109eb5;
+}
+
+nav a:hover {
+    color: #109eb5;
+}
+
+/*-----------Slideshow-------------------*/
+
+#slideshow {
+    overflow: hidden;
+    height: 600px;
+    width: 100vw;
+    margin-bottom: 10vh;
+}
+
+.slide-wrapper {
+    width: 300vw;
+    -webkit-animation: slide 20s ease infinite;
+}
+
+.slide {
+    float: left;
+    height: 600px;
+    width: 100vw;
+    background-color: black;
+
+}
+
+.slide img {
+    height: 600px;
+    opacity: 0.5;
+}
+
+.captiontext {
+    text-align: center;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;
+    z-index: 2;
+    color: red;
+    font-size: 60px;
+    color: white;
+}
+
+
+@-webkit-keyframes slide {
+    20% {
+        margin-left: 0%;
+    }
+
+    30% {
+        margin-left: -100%;
+    }
+
+    50% {
+        margin-left: -100%;
+    }
+
+    60% {
+        margin-left: -200%;
+    }
+
+    80% {
+        margin-left: -200%;
+    }
+}
+
+/*------------------------------*/
+
+#section1 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10vh;
+}
+
+#section1 figure {
+    width: 30%;
+    height: 400px;
+    background-color: black;
+}
+
+#section1 figure img {
+    height: 400px;
+    opacity: 0.75;
+}
+
+
+#section1 figure figcaption {
+    font-size: 30px;
+}
+
+/*------------------------------*/
+
+
+#section2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10vh;
+}
+
+#section2 figure {
+    width: 50%;
+}
+
+#section2 figure img {
+    height: 500px;
+    object-fit: cover;
+}
+
+
+#section2 div {
+    width: 50%;
+    height: 500px;
+    text-align: center;
+    padding: 5em;
+}
+
+#section2 h2 {
+    margin-bottom: 20px;
+}
+
+#section2 table {
+    width: 50%;
+    margin: auto;
+}
+
+#section2 tr,
+#section2 th {
+    padding-bottom: 20px;
+}
+
+
+/*------------------------------*/
+
+#section3 {
+    text-align: center;
+    margin-bottom: 10vh;
+}
+
+#gallery2 {
+    display: flex;
+    margin-top: 2.5vh;
+
+}
+
+#gallery2 figure {}
+
+#gallery2 figure img {
+    height: 300px;
+}
+
+/*------------------------------*/
+
+#map figure {
+    margin-top: 200px;
+    margin-bottom: 10vh;
+}
+
+#map img {
+    height: 500px;
+}
+
+/*------------------------------*/
+
+#footer {
+    background-color: #292929;
+}
+
+#footerwrapper {
+    background-color: #292929;
+    display: flex;
+    align-items: center;
+    height: 160px;
+    width: 1100px;
+    margin: auto;
+
+}
+
+#footerwrapper section {
+    margin-right: 100px;
+}
+
+footer p {
+    color: #FFF;
+    line-height: 30px;
+}
+
+footer img {
+    padding-right: 8px;
+    padding-top: 4px;
+    width: 25px;
+    opacity: 1.0;
+    filter: alpha(opacity=100);
+}
+
+footer a:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=100);
+
+}

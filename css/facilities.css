@@ -1,0 +1,319 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+
+
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+body {
+    font-family: Helvetica;
+}
+
+Figcaption,
+table {
+    font-family: Quicksand;
+}
+
+header {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    margin-left: 30px;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100px;
+    margin-right: 50px;
+}
+
+nav .active {
+    color: #109eb5;
+}
+
+nav ul {
+    display: flex;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+nav ul li {
+    list-style: none;
+    margin-left: 25px;
+
+}
+
+nav ul li a {
+    color: darkgray;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+nav .active {
+    color: #109eb5;
+}
+
+nav a:hover {
+    color: #109eb5;
+}
+
+/*------------------------------*/
+
+
+#banner {
+    width: 100%;
+    position: relative;
+    background-color: black;
+}
+
+#banner img {
+    object-fit: cover;
+    height: 600px;
+    width: 100%;
+    opacity: 0.5;
+}
+
+
+.text {
+    position: absolute;
+    bottom: 280px;
+    text-align: center;
+    width: 100%;
+    color: #fff;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 400;
+    font-size: 48px;
+    letter-spacing: 20px;
+    text-transform: uppercase;
+}
+
+
+.accordion {
+    margin: 3em auto;
+    width: 75%;
+}
+
+.toggle {
+    display: none;
+}
+
+.option {
+    position: relative;
+    margin-bottom: 1em;
+}
+
+.title,
+.content {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    transition: all 0.2s;
+}
+
+.title {
+    background: #fff;
+    padding: 1em;
+    display: block;
+    color: #7a7572;
+    font-weight: bold;
+}
+
+.title:after,
+.title:before {
+    content: "";
+    position: absolute;
+    right: 1.25em;
+    top: 1.25em;
+    width: 2px;
+    height: 0.75em;
+    background-color: #7a7572;
+    transition: all 0.2s;
+}
+
+.title:after {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.content {
+    height: 0;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.content p {
+    margin: 0;
+    padding: 0.5em 1em 1em;
+    font-size: 0.9em;
+    line-height: 1.5;
+}
+
+.toggle:checked + .title,
+.toggle:checked + .title + .content {
+    box-shadow: 3px 3px 6px darkgray, -3px 3px 6px darkgray;
+}
+
+.toggle:checked + .title + .content {
+    height: 500px;
+}
+
+.toggle:checked + .title:before {
+    -webkit-transform: rotate(90deg) !important;
+    transform: rotate(90deg) !important;
+}
+
+
+/*------------------------------*/
+
+#opening table {
+    width: 50%;
+    margin: auto;
+}
+
+#opening tr,
+#opening th {
+    padding-bottom: 20px;
+}
+
+
+.info {
+    display: flex;
+}
+
+.info .table,
+.info figure {
+    width: 50%;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/*------------------------------*/
+
+#sauna figure img {
+    height: 30vh;
+}
+
+#sauna .articlewrapper {
+    display: flex;
+}
+
+#sauna div h2 {
+    text-align: center;
+}
+
+#sauna article {
+    padding: 20px;
+}
+
+/*------------------------------*/
+
+#bassin .content {
+    display: flex;
+}
+
+#bassin article {
+    width: 50%;
+    text-align: center;
+    padding: 50px;
+}
+
+#bassin figure {
+    width: 50%;
+}
+
+#bassin figure img {
+    height: 500px;
+}
+
+/*------------------------------*/
+#coffee .content {
+    display: flex;
+}
+
+#coffee article {
+    width: 50%;
+    text-align: center;
+    padding: 50px;
+}
+
+#coffee figure {
+    width: 50%;
+}
+
+#coffee figure img {
+    height: 500px;
+}
+
+/*------------------------------*/
+#rules .content {
+    display: flex;
+}
+
+#rules article {
+    width: 50%;
+    text-align: center;
+    padding: 50px;
+}
+
+#rules figure {
+    width: 50%;
+}
+
+#rules figure img {
+    height: 500px;
+}
+
+/*------------------------------*/
+#footer {
+    background-color: #292929;
+    height: 160px;
+}
+
+#footerwrapper {
+    background-color: #292929;
+    display: flex;
+    align-items: center;
+    height: 160px;
+    width: 1100px;
+    margin: auto;
+}
+
+#footerwrapper section {
+    margin-right: 100px;
+}
+
+footer p {
+    color: #FFF;
+    line-height: 30px;
+}
+
+footer img {
+    padding-right: 8px;
+    padding-top: 4px;
+    width: 25px;
+    opacity: 1.0;
+    filter: alpha(opacity=100);
+}
+
+footer a:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=100);
+
+}
